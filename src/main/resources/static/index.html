@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>HandyMan Services</title>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+<header>
+  <h1 id="siteTitle">HandyMan Services</h1>
+</header>
+<main>
+  <div id="buttoncontainer">
+    <a  id="" onclick="showServices()"><button class="anchorbutton">Services</button></a>
+    <a  id="" onclick="showNewServiceForm()"><button class="anchorbutton">New Service</button></a>
+  </div>
+
+  <div id="servicesContainer">
+
+  </div>
+
+  <div id="addNewService">
+    <form id="newServiceForm">
+      <input class="input" type="text" placeholder="Service Name" name="serviceName">
+      <input class="input" type="text" placeholder="Provider Name[FirstName LastName]" name="providerName">
+      <input class="input" type="text" placeholder="Address" name="address">
+      <select id="availabilitySelect" class="input" name="availability">
+        <option value="" disabled selected >Availability</option>
+        <option value="true">Available</option>
+        <option value="false">Not Available</option>
+      </select>
+      <input class="input" type="text" placeholder="Description" name="description">
+      <input class="input" type="text" placeholder="Contact Number" name="contactNo">
+      <input type="button" value="Submit" class="button" onclick="submitNewService()">
+    </form>
+    <p id="messageText"></p>
+  </div>
+</main>
+
+<script src="js/home.js"></script>
+</body>
+</html>
