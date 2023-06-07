@@ -15,6 +15,9 @@ public class RestController {
     @Autowired
     private HandyManService handyManService;
 
+    public RestController(HandyManService handyManService) {
+    }
+
     @GetMapping("/handyman")
     public ResponseEntity<List<HandyMan>> getAllHandyManServices() {
 

@@ -106,4 +106,6 @@ public class HandyMan {
         this.serviceDesc = serviceDesc;
     }
 
+    public void setName(String s) {
+    }
 }
